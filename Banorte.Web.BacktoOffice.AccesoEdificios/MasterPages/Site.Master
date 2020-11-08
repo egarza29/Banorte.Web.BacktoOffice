@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Banorte.Web.BacktoOffice.AccesoEdificios.MasterPages.Site" %>
+ 
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%//=Page.Title %> - Mi aplicación ASP.NET</title>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet"  />
+    <link href="/Content/bootstrap-grid.min.css" rel="stylesheet" />
+
+    <link href="/css/site.css" rel="stylesheet"  />
+    <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body style="background-image:url('/img/illustration.png');">
+    <form id="form1" runat="server" >
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-page="/">Acceso a Edificios</a>
+                </div>
+            </nav>
+
+        </header>
+
+        <div class="container" >
+            <main role="main" class="pb-3">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+        </div>
+        <footer class="border-top footer text-muted">
+            <div id="footertext" class="container">
+                &copy; 2020 - Grupo Financiero Banorte - <a asp-area="" asp-page="/Privacy">Aviso de Privacidad</a>
+            </div>
+        </footer>
+        <script src="/Scripts/jquery-3.5.1.js" ></script>
+        <script src="/Scripts/bootstrap.min.js" ></script>
+    </form>
+</body>
+</html>
